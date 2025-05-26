@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Generate hashed password for 'ubuntu'
+HASH=$(openssl passwd -6 123)
+
+# Create user with home dir and bash shell
+useradd -m -s /bin/bash ubuntu
+
+# Set the hashed password directly
+usermod --password "$HASH" ubuntu
