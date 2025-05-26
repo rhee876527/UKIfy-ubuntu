@@ -8,8 +8,9 @@ Even though it is possible to directly boot the generated `EFI` image from `UEFI
 
 #### Requirements:
 - Mkosi
-- 8GB RAM or more. Much lower if you want a headless live system.
+- Systemd-boot
 - An `EFI` boot partition with at least `~600MB` free.
+- 8GB RAM or more. Much lower if you want a headless live system.
 
 #### Get started
 ###### testing with qemu
